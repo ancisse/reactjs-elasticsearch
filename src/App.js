@@ -73,8 +73,8 @@ class SearchForm extends React.Component {
     return (
      <div>
             <input value = {this.state.data} onChange = {this.updateState} 
-               ref = "myInput"></input>
-            <button onClick = {this.handleSearch}>Search</button>
+               ref = "searchInput"></input>
+            <button onClick = {this.handleSearch}>Search events</button>
 			<hr />
 			<div>
 			<ReactTable
@@ -149,7 +149,7 @@ class SubmitForm extends React.Component {
     return (
       <div className="App">
 		<form onSubmit={this.handleSubmit}>
-		 Create elastic search document <input type="submit" value="Create" />
+		 Create elastic search document <input type="submit" value="Send events" />
 		 </form>
 		 
       </div>
